@@ -1,9 +1,16 @@
 /* Mobile first queries */
 /* applies to ALL widths */
+body{
+    background-color: rgba(119, 136, 153, 0.51);
+}
 .header {
     padding: 30px 0 20px 0;
-    background-image: url(imgs/ZachHeadshot-2.jpg);
     background-size: cover;
+}
+.hs{
+    padding: 5px;
+    width: 50%;
+    height: 50%;
 }
 .logo {
     font-weight: 600;
@@ -55,6 +62,12 @@ h2 {
 /* Larger than phablet */
 /* applies to all widths 550px and greater */
 @media (min-width: 550px) {
+    .hs{
+        padding: 5px;
+        width: 50%;
+        height: 50%;
+        float:left;
+    }
     .header{
         padding: 40px 0 50px 0;
     }
