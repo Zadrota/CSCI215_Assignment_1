@@ -1,0 +1,67 @@
+'''HW13
+Zach Dayton
+I worked on this homework alone, without help from any other students.
+
+1. psuedocode for selection sort
+    For item in list:
+        Find smallest/lowest/first item in list
+        pop first item in list with the smallest/lowest/first item
+    return list
+    
+2. psuedocode for bubble sort
+    For item in list:
+        compare item and item+1
+        if item+1 < item:
+            switch item and item + 1
+    return list
+            
+3. psuedocode for merge sort:
+    Divide list into halves
+    merge sort 1st half
+    merge sort 2nd half
+    merg the halves
+4a.Linear search
+    n
+4b.Binary search
+    log2n
+4c.Naive sorts: Selection or Bubble sort
+    n^2
+4d.Merge sort
+    nlog2n
+5. Write the code for a selection sort.
+def main():
+    lst = [5,3,8,7,4,6,9,2,1]
+def selSort(lst)
+    for i in range(len(lst)-1):
+        minPos = lst[i]
+        for j in range(i+1,len(lst)):
+            if lst[i] < lst[minPos]:
+                minPos = j
+        lst[i],lst[minPos] = lst[minPos],lst[i]
+main()
+6. Write the code for a bubble sort.
+def main():
+    lst = [5,3,8,7,4,6,9,2,1]
+def bubSort(lst):
+    n = len(lst)-1
+    for i in range(n):
+        for j in range(n-i):
+            if lst[j] > lst[j+1]:
+                swap lst[j], lst[j+1]
+main()
+7.  Write a recursive solution to reverse a list.
+Must work for a list of any length. A length of 1 is the "base case."
+
+def main():
+    lst = [5,3,8,7,4,6,9,2,1]
+
+    lst = revLst(lst)
+    print(lst)
+def revLst(lst):
+    if len(lst) <= 1:
+        return lst
+    sub = revLst(lst[1:])
+    return sub + [lst[0]]
+
+main()
+'''
